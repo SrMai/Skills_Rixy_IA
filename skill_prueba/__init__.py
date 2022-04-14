@@ -29,7 +29,7 @@ class QuestionsAnswersSkill(FallbackSkill):
         self.lock = Lock()
         self.waiting = True
         self.answered = False
-
+        
     def initialize(self):
         self.add_event('question:query.response',
                        self.handle_query_response)
