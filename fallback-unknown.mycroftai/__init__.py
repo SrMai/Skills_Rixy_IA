@@ -40,7 +40,7 @@ class UnknownSkill(FallbackSkill):
                     self.log.info('Tipo de respaldo: ' + i)
                     self.speak_dialog(i, data={'restante': l.replace(i, '')})
                     return True
-        self.speak_dialog('unknown')
+        self.speak_dialog('desconocida')
         return True
 
 
